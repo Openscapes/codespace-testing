@@ -1,6 +1,6 @@
 # codespace-testing
 
-How to set up GH codespace for NASA Hackathon tutorials. I will [use a predefined container](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/configuring-codespaces-for-your-project#using-a-predefined-container-configuration) based on a Jupyter Data Science container with Python, R and Julia. Then I customize the conda environment with a `environment.yml` file. That installs the Python packages that I need.
+How to set up GH codespace for NASA Hackathon tutorials. I will [use a predefined container](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/configuring-codespaces-for-your-project#using-a-predefined-container-configuration) based on a Jupyter Data Science container with Python, R and Julia. I wanted R, but for just running the NASA Jupyter notebooks, you could just use the default codespace container I think. Then I customize the conda environment with a `environment.yml` file. That installs the Python packages that I need.
 
 1. Click on green code button and then the codespace tab
 2. Select a 4-core, 8Gig RAM codespace
