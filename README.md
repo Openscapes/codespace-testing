@@ -27,3 +27,5 @@ Now you add the environment file to get the Python packages needed for the NASA 
 ## Notes for R
 
 You can use R within Jupyter notebooks but it doesn't have the functionality you are used with with RStudio. This R extension looks like it is working on providing better functionality for R within Visual Studio. https://github.com/REditorSupport/vscode-R
+
+Fork this repo, that is set up for R and vscode-R already. https://github.com/jakubnowicki/r-codespaces
