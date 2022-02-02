@@ -18,3 +18,8 @@ Now you add the environment file to get the Python packages needed for the NASA 
 
 9. Rebuild your codespace. Be patient the first time. It takes awhile to load the environment. You want to get the terminal showing at the bottom and then you can watch the progress.
 10. The next time you open the codespace it'll go faster.
+
+
+## Notes for R
+
+You can use R within Jupyter notebooks but it doesn't have the functionality you are used with with RStudio. This R extension looks like it is working on providing better functionality for R within Visual Studio. https://github.com/REditorSupport/vscode-R
