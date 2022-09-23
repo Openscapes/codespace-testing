@@ -10,7 +10,7 @@ COPY library-scripts/common-debian.sh /tmp/library-scripts/
 USER root
 RUN apt-get update \
  && groupadd jovyan \
- && usermod -a -G jovyan jovyan \
+ && usermod -g jovyan -a -G users jovyan \
  && bash /tmp/library-scripts/common-debian.sh \
  && apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/library-scripts
 
@@ -33,3 +33,5 @@ RUN curl -LO https://quarto.org/download/latest/quarto-1.1.251-linux-amd64.deb
 RUN gdebi --non-interactive quarto-1.1.251-linux-amd64.deb
 
 RUN quarto install tool tinytex
+
+USER jovyan
