@@ -1,6 +1,6 @@
 # codespace-testing
 
-How to set up GH codespace for NASA Hackathon tutorials. I will [use a predefined container](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/configuring-codespaces-for-your-project#using-a-predefined-container-configuration) based on a Jupyter Data Science container with Python, R and Julia. I wanted R, but for just running the NASA Jupyter notebooks, you could just use the default codespace container I think. Then I customize the conda environment with a `environment.yml` file. That installs the Python packages that I need.
+How to set up GH codespace for NASA Hackathon tutorials. I will [use a predefined container](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/configuring-codespaces-for-your-project#using-a-predefined-container-configuration) based on a Jupyter Data Science container with Python, R and Julia. I wanted R, but for just running the NASA Jupyter notebooks, you could just use the default codespace container I think. Then I customize the conda environment with a `environment.yml` file (based on the NASA Openscapes [corn](https://github.com/NASA-Openscapes/corn) repo). That installs the Python packages that I need. Note, the virtual machine is on AWS but on west-2-california so the tutorials on S3 access probably won't work.
 
 [Video of me setting up a brand new GitHub codespace from scratch](https://youtu.be/h7QLx2isrw4) Takes all of 3-4 button clicks.
 
@@ -27,3 +27,5 @@ Now you add the environment file to get the Python packages needed for the NASA 
 ## Notes for R
 
 You can use R within Jupyter notebooks but it doesn't have the functionality you are used with with RStudio. This R extension looks like it is working on providing better functionality for R within Visual Studio. https://github.com/REditorSupport/vscode-R
+
+Fork this repo, that is set up for R and vscode-R already. https://github.com/jakubnowicki/r-codespaces
