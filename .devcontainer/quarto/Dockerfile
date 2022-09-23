@@ -29,7 +29,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     gdebi-core \
     && rm -rf /var/lib/apt/lists/*
 
-RUN curl -LO https://quarto.org/download/latest/quarto-1.1.251-linux-amd64.deb
+RUN curl -LO https://github.com/quarto-dev/quarto-cli/releases/download/v1.1.251/quarto-1.1.251-linux-amd64.deb
 RUN gdebi --non-interactive quarto-1.1.251-linux-amd64.deb
 
 RUN quarto install tool tinytex
