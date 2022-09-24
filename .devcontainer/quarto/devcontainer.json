@@ -24,13 +24,14 @@
 			// Set *default* container specific settings.json values on container create.
 			"settings": { 
 				"python.defaultInterpreterPath": "/opt/conda/bin/python",
-				"quarto.render.previewType": "external"
+				"quarto.render.previewType": "none"
 			},
 			
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"ms-python.python",
-				"quarto.quarto"
+				"quarto.quarto",
+				"tomoki1207.pdf"
 			],
 
 		}
