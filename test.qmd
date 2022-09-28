@@ -1,5 +1,16 @@
+---
+title: "Matplotlib Demo"
+author: "Norah Smith"
+date: "5/22/2021"
+jupyter: python3
+latex-auto-install: true
+pdf-engine: xelatex
+---
+
 Hello here is my text.
 
 ```{python}
 1+1
 ```
+
+New test

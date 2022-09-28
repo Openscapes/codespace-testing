@@ -13,6 +13,7 @@ RUN apt-get update \
  && usermod -g jovyan -a -G users jovyan \
  && bash /tmp/library-scripts/common-debian.sh \
  && apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/library-scripts
+RUN apt-get autoremove --purge --yes texlive tex-common
 
 # [Optional] If your pip requirements rarely change, uncomment this section to add them to the image.
 # COPY requirements.txt /tmp/pip-tmp/
@@ -29,9 +30,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     gdebi-core \
     && rm -rf /var/lib/apt/lists/*
 
-RUN curl -LO https://quarto.org/download/latest/quarto-1.1.251-linux-amd64.deb
+RUN curl -LO https://github.com/quarto-dev/quarto-cli/releases/download/v1.1.251/quarto-1.1.251-linux-amd64.deb
 RUN gdebi --non-interactive quarto-1.1.251-linux-amd64.deb
 
-RUN quarto install tool tinytex
-
 USER jovyan
+
+RUN sudo quarto install tool tinytex
+

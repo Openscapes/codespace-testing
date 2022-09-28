@@ -1,0 +1,6 @@
+name: base
+channels:
+  - conda-forge
+dependencies:
+  - matplotlib-base~=3.4
+  - pip
