@@ -14,7 +14,9 @@ RUN apt-get update \
  && bash /tmp/library-scripts/common-debian.sh \
  && apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/library-scripts
 
-RUN sudo apt autoremove --purge texlive tex-common
+# Get rid of TeXLive. It's old
+RUN apt-get autoremove --purge --yes texlive tex-common
+
 # [Optional] If your pip requirements rarely change, uncomment this section to add them to the image.
 # COPY requirements.txt /tmp/pip-tmp/
 # RUN pip3 --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements.txt \
