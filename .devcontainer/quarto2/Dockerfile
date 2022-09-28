@@ -33,8 +33,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN curl -LO https://github.com/quarto-dev/quarto-cli/releases/download/v1.1.251/quarto-1.1.251-linux-amd64.deb
 RUN gdebi --non-interactive quarto-1.1.251-linux-amd64.deb
 
+USER jovyan
+
 RUN quarto install tool tinytex
 
 RUN PATH=/home/jovyan/.TinyTeX/bin/x86_64-linux:$PATH
 
-USER jovyan
